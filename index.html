@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GroceryTrack — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#1a5c35;
+color:#fff;
+text-align:center;
+}
+    .hero h1 { font-size: 38px; margin-bottom: 14px; }
+    .hero p  { font-size: 16px; opacity: 0.85; margin-bottom: 28px; }
+    .hero-btns {  gap: 12px; justify-content: center;}
+    .hero-btns a {
+      padding: 12px 28px;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+    .btn-white { background: #fff; color: #1a5c35; }
+    .btn-border { background: transparent; border: 2px solid #fff; color: #fff; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">Grocery<span>Track</span></div>
+  <a href="index.html" class="active">Home</a>
+  <a href="login.html">Login</a>
+  <a href="inventory.html">Inventory</a>
+  <a href="dashboard.html">Dashboard</a>
+</nav>
+
+<div class="hero">
+  <h1> GroceryTrack</h1>
+  <p>Simple grocery inventory management — track stock, get low-stock alerts, all in your browser.</p>
+  <div class="hero-btns">
+    <a href="login.html" class="btn-white">Get Started</a>  
+</div>
+</body>
+</html>

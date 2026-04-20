@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GroceryTrack — Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav>
+  <div class="brand">Grocery<span>Track</span></div>
+  <a href="index.html">Home</a>
+  <a href="login.html" id="navLogin">Login</a>
+  <a href="inventory.html">Inventory</a>
+  <a href="dashboard.html" class="active">Dashboard</a>
+  <a href="#" id="navLogout" onclick="logout()" class="logout-btn" style="display:none;">Logout</a>
+</nav>
+<div class="page">
+  <h1 style="margin-bottom:20px;"> Dashboard</h1>
+<div class="stats-row">
+    <div class="stat-card">
+      <div class="num num-green" id="statTotal">0</div>
+      <div class="lbl"> Total Items</div>
+    </div>
+    <div class="stat-card">
+      <div class="num num-blue" id="statValue">₹0</div>
+      <div class="lbl">Inventory Value</div>
+    </div>
+    <div class="stat-card">
+      <div class="num num-red" id="statLow">0</div>
+      <div class="lbl"> Low Stock (&lt;5)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num num-amber" id="statAvg">₹0</div>
+      <div class="lbl"> Avg Item Price</div>
+    </div>
+  </div>
+  <div style="display:grid;  gap:16px; margin-bottom:20px;">
+    <div class="card">
+      <h2>Stock Level Overview</h2>
+      <div id="stockBars">
+        <p style="color:#888; font-size:14px;">No items yet.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h2> Low Stock Alerts</h2>
+      <div id="lowList">
+        <p style="color:#1a5c35; font-size:14px;"> All items well stocked!</p>
+      </div>
+    </div>
+  </div>
+ <div class="card" style="padding:0; overflow:hidden;">
+    <div style="padding:16px 20px; border-bottom:1px solid #eee;">
+      <h2> Full Inventory Summary</h2>
+    </div>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price (₹)</th>
+            <th>Total Value (₹)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="summaryBody"></tbody>
+      </table>
+      <div id="summaryEmpty" style="text-align:center; padding:40px; color:#888; display:none;">
+        No inventory data. <a href="inventory.html" style="color:#1a5c35; font-weight:bold;">Add items →</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; padding:20px 0 10px;">
+    <a href="inventory.html" class="btn btn-green">Go to Inventory →</a>
+  </div>
+</div>
+<script src="api.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
