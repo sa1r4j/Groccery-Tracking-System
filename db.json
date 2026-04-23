@@ -1,33 +1,5 @@
 {
   "users": [
-    {
-      "name": "sairaj",
-      "email": "jatharsairaj@gmail.com",
-      "password": "sairajjathar@1312"
-    },
-    {
-      "name": "sairaj",
-      "email": "sairaj.jathar.1312@gmail.com",
-      "password": "sairajjathar@1312"
-    },
-    {
-      "name": "sairaj",
-      "email": "sairaj.jathar.13@gmail.com",
-      "password": "sairajjathar"
-    }
-  ],
-  "inventory": [
-    {
-      "id": 1776668144252,
-      "name": "rice",
-      "quantity": 4,
-      "price": 54
-    },
-    {
-      "id": 1776668168559,
-      "name": "choclate",
-      "quantity": 1520,
-      "price": 20
-    }
+
   ]
 }
